@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="es" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AdminCMG</title>
+    
+    <link rel="stylesheet" href ="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css" >
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+    emailjs.init('9wipSkeRnxxUChuBW')
+    </script>
+    
+</head>
+
+<body>
+
+<header class="navBarBriefcase" >
+    
+    <nav class="navbar navbar-expand-lg bg-body-tertiary py-3  ">
+        <div class="container ">
+          <a class="navbar-brand" href="#home">
+            <img src="./assets/Img/Iconos/portafolio.png" alt="ImagenPortafolio">
+          </a>
+         
+          <button class="navbar-toggler  " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          
+        
+
+          <div class="collapse navbar-collapse divNavBar" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 txtHeader">
+              <li class="nav-item">
+                <a class="nav-link active txtTransicion px-2" href="#about-me">Sobre Mi</a>
+              </li>
+              <li class="nav-item txtTransicion px-2">
+                <a class="nav-link" href="#projects">Proyecto</a>
+              </li>
+              <li class="nav-item txtTransicion px-2">
+                <a class="nav-link" href="#contact">Contacto</a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </nav>
+       
+</header>
+
+<main >
+
+   <div class="social-bar">
+    <a href="#" title="LinkedIn">
+            <img src="./assets/Img/Iconos/linkedin.png" class="">
+        </a>
+    <a href="#" title="GitHub">
+            <img src="./assets/Img/Iconos/github.png" class="">
+        </a>
+    <a href="#" title="Contactame">
+             <img src="./assets/Img/Iconos/contacto.png" class="">
+        </a>
+
+  </div>
+
+<section class="container px-4 py-4 sectionPresetation " id="home">
+    <div class="d-sm-flex  ">
+        <div class="col-lg-6 px-2 d-flex justify-content-center ">
+            <img src="./assets/Img/Iconos/hombre.png " class="img-fluid">
+        </div>
+        <div class="divPresentation px-4 ">
+            <h1 class="txtPresentationH1 py-2 "> Hola, soy Franco</h1>
+            <!-- <h2 class="txtH2 pb-1 ">Desarrollador Full Stack</h2> -->
+
+            <div class="console-container">
+                <span id='text'></span>
+                <div class="console-underscore" id='console'>
+                    &#95;
+                </div>
+            </div>
+
+            <p class="txtPresentationP pt-2 ">Un desarrollador web orientado a resultados que crea y administra sitios web y aplicaciones web. Diseño y codifico cosas maravillosamente simples y amo lo que hago</p>
+
+            <div class="d-flex justify-content-between align-items-center">
+                <div>
+                    <a class="px-2">
+                        <img src="./assets/Img/Iconos/linkedin.png" class="">
+                    </a>
+                    <a class="px-2">
+                        <img src="./assets/Img/Iconos/github.png" class="">
+                    </a> 
+                </div>
+                <div class="d-flex justify-content-center align-items-center">
+                    <a class="px-4 divPresentationABorder buttonAnimation wobble-hor-bottom " href="#contact">
+                        <p class="txtBtn ">
+                            Contactame
+                        </p>
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+    <div class="d-flex">
+        <img  class="imgPortada" src="./assets/Img/Fondos/fondoPortada.svg">
+    </div>
+
+    
+</section>
+
+<section id="about-me" class="container px-4 py-4">
+    <hr>
+    <div class=" main-container">
+        <div class="text-center  py-4">
+            <h2 class="txtH1 ">ACERCA DE MÍ</h2>
+            <p class="txtPresentationP pt-1">Diseño y codifico cosas maravillosamente simples y amo lo que hago</p>
+        </div>
+        <hr>
+        <div class="d-md-flex pt-3">
+            <div class="col-md-6 " >
+                <h2 class="py-3 text-center txtH2 ">¡Llegar a conocerme!</h2>
+                <p class="txtP pt-3">
+                    Soy un desarrollador web centrado en el frontend que construye y administra el front-end de sitios web y aplicaciones web que conducen al éxito del producto en general. Echa un vistazo a algunos de mis trabajos en la sección de Proyectos .
+                </p>
+                <p class="txtP">
+                    También me gusta compartir contenido relacionado con lo que he aprendido a lo largo de los años en Desarrollo Web para que pueda ayudar a otras personas de la Comunidad de Desarrollo. No dudes en conectarte o seguirme en mi Linkedin e Instagram, donde publico contenido útil relacionado con el desarrollo y la programación web.
+                </p>
+                <p class="txtP">
+                    Estoy abierto a oportunidades laborales donde pueda contribuir, aprender y crecer. Si tienes una buena oportunidad que coincida con mis habilidades y experiencia, no dudes en contactarme 
+                </p>
+            </div>
+            <div class=" col-md-6">
+                <h2 class="py-3 text-center txtH2">Mis habilidades</h2>
+                <div class="d-flex flex-column  justify-content-center align-items-center">
+                    <div class="d-flex justify-content-around py-4 w-75">
+                        <img src="./assets/Img/Skills/html-5.png" class="img-fluid iconAbility">
+                        <img src="./assets/Img/Skills/css.png" class="img-fluid iconAbility"> 
+                        <img src="./assets/Img/Skills/js.png" class="img-fluid iconAbility">
+                        <img src="./assets/Img/Skills/bootstrap.png" class="img-fluid iconAbility">
+                    </div>
+                    <div class="d-flex justify-content-around py-4 w-75">
+                        <img src="./assets/Img/Skills/noSql.png" class="img-fluid iconAbility">
+                        <img src="./assets/Img/Skills/mysql.png" class="img-fluid iconAbility">
+                        <img src="./assets/Img/Skills/firebase.png" class="img-fluid iconAbility">
+                        <img src="./assets/Img/Skills/mongoDB.png" class="img-fluid iconAbility">
+                        
+                    </div>
+                    <div class="d-flex justify-content-around py-4 w-75">
+                        <img src="./assets/Img/Skills/github.png" class="img-fluid iconAbility">
+                        <img src="./assets/Img/Skills/php.png" class="img-fluid iconAbility">
+                        <img src="./assets/Img/Skills/mysql.png" class="img-fluid iconAbility">
+                        <img src="./assets/Img/Skills/mysql.png" class="img-fluid iconAbility">
+                        
+                    </div>
+
+                    
+                </div>
+            </div>
+       </div>
+    </div>
+    
+</section>
+
+<section id="projects" class="container px-4 py-4">
+    <div class="">
+        <hr>
+        <div class="text-center  py-4">
+            <h2 class="txtH1 ">Proyectos</h2>
+            <p class="txtPresentationP pt-1">Diseño y codifico cosas maravillosamente simples y amo lo que hago</p>
+        </div>
+        <hr>
+     <!--
+        <div class="row" id="containerProyects" >
+      -->   
+                <div class="d-sm-flex"> 
+                    <div class="col-lg-4 col-md-6" >
+                        <a href="https://tusitio.com" target="_blank" style="text-decoration: none; color: inherit;">
+                            <div class="divProyect" style="background-image:url(  ${product.Image})">
+                                <div class="background"></div>
+                                <div class="cardProyect">
+                                    <div class="footer">
+                                        <div class="info">
+                                            <div class="name">Ledesma3D</div>
+                                        </div>
+                                    </div>
+                                    <div class="card-blur"></div>
+                                </div>
+                        </a>  
+                        </div>
+                    </div>
+             
+                <div class="col-lg-8 px-5 py-4  d-flex flex-column justify-content-center"> 
+                    <div>
+                        <h3 class="txtNameProyect py-2"> Ledesma3D </h3>
+                        <p class="pTxtProyect px-2">Ledesma3D es una tienda online dedicada a la venta de productos impresos en 3D, desarrollada con HTML y JavaScript. Ofrece una experiencia de usuario intuitiva, permitiendo a los clientes explorar, personalizar y adquirir modelos únicos. La plataforma combina funcionalidad y diseño visual para presentar de forma clara cada producto, enfocándose en la accesibilidad y la estética moderna.</p>
+                    </div>
+                    
+                    <div class="  px-2 py-2">
+                            <ul class="tech-tags">
+                              <li class="tech-pill">HTML</li>
+                              <li class="tech-pill">CSS / SCSS</li>
+                              <li class="tech-pill">JavaScript</li>
+                              <li class="tech-pill">Git & GitHub</li>
+                              <li class="tech-pill">Bootstrap</li>                          
+                            </ul>
+                        </div>
+                        
+                     <div class="d-flex align-items-center">
+                        <div class=" px-4 py-2">
+                            <a href="${product.githubUrl}" target="_blank">
+                            <img src="./assets/Img/Iconos/github.png" class="icon-hover" alt="ImgGitHub"  >
+                            </a>
+                         </div>
+                         <div class="icon-hover">
+                            <a href="https://tu-sitio.com" target="_blank" class="aVisitWeb">Visitar sitio</a>
+                         </div>
+                     </div>   
+                    
+
+                    
+                        
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
+</section>
+
+<section id="contact" class="container px-4 py-4">
+    <div class=" main-container">
+        <hr>
+        <div class="text-center  py-4">
+            <h2 class="txtH1 ">Contacto</h2>
+                <div class="inline-container">
+                    <p class="txtPresentationP pt-1">Ponte en contacto o envíame un correo electrónico directamente a:</p>
+                    <span id="email" class="txtSpan">Ledesmafranco50@gmail.com</span>
+                    <button class="btnCopy" id="btnCopyEmail" >
+                        <img src="./assets/Img/Iconos/copy.png" alt="Copiar" style="width: 20px; height: 20px;">
+                    </button>
+                </div>
+        </div>
+        <hr>
+        <div class="d-flex justify-content-center   pt-3">
+            <div class="col-10 divFomrContact ">
+                <div class="col-8">
+                    <form class="" id="formEmail">
+                        
+                        <div class="mb-3">
+                            <label for="formGroupExampleInput" class="form-label labelFormContact">Nombre</label>
+                            <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre" name="name" id="name">
+                        </div>
+            
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label labelFormContact" >Correo electrónico</label>
+                            <input type="email" class="form-control"  placeholder="nombre@example.com"  name="fromEmail" id="fromEmail">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label labelFormContact " >Mensaje</label>
+                            <textarea class="form-control" rows="3" name="message" id="message"></textarea>
+                        </div>
+
+                        <div class="d-flex justify-content-center">
+                            <button type="submit" class="btn btn-primary btnFormContact w-50" id="buttonForm" >Enviar</button>
+                        </div>
+                        
+                    </form>
+                </div>
+
+
+            </div>
+           
+            
+       </div>
+    </div>
+</section>
+
+
+
+
+
+</main>
+
+
+<footer class="footerCcs" >
+    <div class="footer-container">
+        <div class="footer-Me">
+            <p class="footer-name">Ledesma Franco Agustin</p>
+            <p class="footer-role">Desarrollador software</p>
+        </div>
+      
+        <div class="footer-social">
+            <a href="#" title="LinkedIn">
+                <img src="./assets/Img/Iconos/linkedin-White.png" class="">
+            </a>
+            <a href="#" title="GitHub">
+                <img src="./assets/Img/Iconos/github-white.png" class="">
+            </a>
+            <a href="#" title="Contactame">
+            <img src="./assets/Img/Iconos/contacto-White.png" class="">
+            </a>
+            <a href="mailto:tuemail@ejemplo.com"></a>
+        </div>
+
+    
+    </div>
+    <div class="footer-autor">
+          <p class="footer-copy">&copy; 2025 Ledesma Franco Agustin. Todos los derechos reservados.</p>
+    </div>
+
+</footer>
+<script src="./js/proyects.js"></script>
+<script src="./js/briefcase.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+<script src="./js/bootstrap.bundle.min.js"> </script>
+</body>
+
+
+</html>

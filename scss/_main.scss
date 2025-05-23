@@ -1,0 +1,300 @@
+
+.divPresentation{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.imgPortada{
+    height: 300px;
+    width: 100%
+
+}
+.txtPresentationH1{
+
+    @include fontsPlatypi(800);
+    font-size: 60px;
+
+    -webkit-animation: glow 2500ms linear infinite 2000ms;
+    animation:  glow 2500ms linear infinite 2000ms;
+
+  }
+
+  .txtPresentationP{
+    @include JosefinSans(400);
+  }
+  .divPresentationABorder{
+    text-decoration: none;
+    border: 1px solid black; /* Puedes cambiar el color y el grosor del borde aquí */
+    border-radius: 30px;
+    display: inline-block; /* Para que el borde se ajuste al contenido */
+    
+    padding: 2px;
+  }
+
+  .divBorderline{
+    border-top:1px solid rgba(0, 0, 0, 0.26); ;
+    
+
+    border-bottom: 1px solid rgba(0, 0, 0, 0.26);
+    padding: 5px;
+
+    
+  }
+
+  .txtBtn{
+    @include fontsPlatypi(400);
+    margin-top: 1px;
+    margin-bottom: 2px;
+        
+  }
+
+  .txtH1{
+    @include fontsPlatypi(800);
+
+  }
+  .txtH2{
+    @include fontsPlatypi(600);
+
+  }
+  .txtP{
+    @include JosefinSans(400);
+  }
+
+  .wobble-hor-bottom {
+	-webkit-animation: wobble-hor-bottom 6s 1s both;
+	        animation: wobble-hor-bottom 6s 1s both;
+}
+
+.divProyect {
+  position: relative;
+  width: 100%;  /* Ajusta según sea necesario */
+  height: 350px;
+
+  border-radius: 25px;
+  border: 3px solid black;
+
+  margin-bottom: 20px;
+  margin: 20px 5px 0px 5px;
+ // padding: 0px 0px 0px 0px;
+  //background-image: url('../assets/Img/Skills/imagen.png');
+  background-size: cover;
+  }
+
+  //--------------------------------------------------------------------------------------------
+  .iconAbility{
+
+    height: 65px;
+    width: 65px;
+
+  }
+
+  //--------------------------------------------------------------------------------------------
+
+
+  .buttonVisitWeb{
+      text-decoration:none;
+      text-align:center; 
+      padding:5px 15px 6px 15px; 
+      border:none; 
+      -webkit-border-radius:28px;
+      -moz-border-radius:28px; 
+      border-radius: 28px; 
+      border: 3px solid #9088f3;
+      
+
+      @include fontsPlatypi(400);
+      font-weight:bold; 
+      
+      background: #f9f9fa;
+     
+     }
+
+    .buttonVisitWeb:hover{ 
+      color:#ffffff;      
+      background: #9088f3;
+     
+    }
+    
+    .buttonVisitWeb:active{
+      scale: (1.1);    
+    }
+
+  .element {
+    transform: rotate(144deg)
+      rotateX(30deg)
+      rotateY(315deg)
+      rotateZ(207deg)
+      perspective(900px)
+      scale(0.5)
+      translate(-80px,-50px)
+      skew(33deg,155deg);
+    transform-origin: 28% 67% -81px;
+  }
+
+   //--------------------------------------------------------------------------------------------
+   // Section contact
+
+   .divFomrContact{
+      display: flex;
+      justify-content: center;
+      background: #f8f9fa;
+      border-radius: 10px;
+      border: solid 1px #7843e9b6;
+
+      box-shadow: -2px 15px 36px 1px rgba(0,0,0,0.73);
+      -webkit-box-shadow: -2px 15px 36px 1px rgba(0,0,0,0.73);
+      -moz-box-shadow: -2px 15px 36px 1px rgba(0,0,0,0.73);
+
+      // background: #ccc9fa;
+
+      padding: 25px 0px 25px 0px
+   }
+
+   .labelFormContact{
+    @include fontsPlatypi(500);
+
+   }
+
+   .btnFormContact{
+    @include fontsPlatypi(400);
+    background-color: #7843e9cb;
+   }
+   .btnFormContact:hover{
+    background-color: #7843e9;
+
+   }
+
+   .txtSpan{
+    @include fontsPlatypi(600);
+   }
+
+   .btnCopy {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+    .copy-btn img {
+    display: block;
+}
+
+//----------------------------------------------------------------
+
+.divBorderlineUp{
+  width: 100%;
+  height: 1px;
+  background-color: #000000;
+
+  -webkit-box-shadow: 40px -42px 20px 0px #7843e9;
+  -moz-box-shadow: 0px -42px 16px 200px rgba(120,67,233,1);
+  box-shadow: 0px -1px 16px 0px rgba(120,67,233,1);
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background-color: #000000; /* Color de la línea */
+  margin: 20px 0; /* Espaciado alrededor de la línea */
+
+  -webkit-box-shadow: 0px 0px 61px 10px rgba(120,67,233,1);
+-moz-box-shadow: 0px 0px 61px 10px rgba(120,67,233,1);
+box-shadow: 0px 0px 61px 10px rgba(120,67,233,1);
+  
+}
+ //--------------------------------------------------------------------------------------------
+   // Section Proyectos
+
+   .divTxtProyect{
+    padding: 10px 30px;
+   }
+
+   .pTxtProyect{
+    @include JosefinSans(400);
+   }
+
+   .tech-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .tech-pill {
+    background-color: #1e2b3a;
+    color: #ffffff;
+    padding: 8px 16px;
+    border-radius: 999px;
+    font-size: 14px;
+    font-weight: 600;
+    white-space: nowrap;
+    transition: background-color 0.3s ease;
+  }
+  
+  .tech-pill:hover {
+    background-color: #2d3e50;
+  }
+
+  .aVisitWeb {
+    text-decoration: none;
+    background-color: #b5b0f7;
+    color: #000000;
+    padding: 8px 16px;
+    border-radius: 999px;
+    font-size: 14px;
+    font-weight: 600;
+    white-space: nowrap;
+   
+  }
+  
+  .aVisitWeb:hover {
+    background-color: #9589e8;
+    
+  }
+
+  .customWidth {
+    display: flex;
+    justify-content: center;
+    width: 30%; /* Por defecto en pantallas pequeñas */
+
+  }
+  .txtNameProyect{
+     @include fontsPlatypi(600);
+  }
+ 
+ /* SideBar /* */
+
+    .social-bar {
+      position: fixed;
+      top: 50%;
+      left: 20px;
+      transform: translateY(-50%);
+      background-color: #fff;
+      padding: 10px 5px;
+      border-radius: 0 8px 8px 0;
+      box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      z-index: 1000;
+    }
+
+    .social-bar a {
+      color: #000;
+      font-size: 18px;
+      transition: color 0.3s, transform 0.3s;
+    }
+
+    .social-bar a:hover {
+      color: #0073b1;
+      transform: scale(1.2);
+    }
+
+    @media (max-width: 768px) {
+  .social-bar {
+    display: none;
+  }
+}

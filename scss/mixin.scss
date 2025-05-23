@@ -1,0 +1,16 @@
+@mixin fontsPlatypi($size){
+
+    font-family: "Platypi", serif;
+    font-optical-sizing: auto;
+    font-weight: $size;
+    font-style: normal;
+}
+
+@mixin JosefinSans($size){
+
+font-family: "Josefin Sans", sans-serif;
+font-optical-sizing: auto;
+font-weight: $size;
+font-style: normal;
+
+}

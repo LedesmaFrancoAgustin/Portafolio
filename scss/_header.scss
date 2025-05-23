@@ -1,0 +1,33 @@
+
+header{
+    box-shadow: 0px 9px 5px -7px rgba(120,67,233,0.67);
+    -webkit-box-shadow: 0px 9px 5px -7px rgba(120,67,233,0.67);
+    -moz-box-shadow: 0px 9px 5px -7px rgba(120,67,233,0.67);
+
+    position: sticky;
+}
+.navBarBriefcase{
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    
+}
+.divNavBar{
+    padding: 0 15px;
+    padding-right: 120px;
+
+    
+
+}
+
+.txtHeader{
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+
