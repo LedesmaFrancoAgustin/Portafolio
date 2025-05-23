@@ -810,6 +810,10 @@ header {
   padding: 2px;
 }
 
+.presentacionContacto {
+  display: none;
+}
+
 .divBorderline {
   border-top: 1px solid rgba(0, 0, 0, 0.26);
   border-bottom: 1px solid rgba(0, 0, 0, 0.26);
@@ -1058,8 +1062,15 @@ hr {
 }
 
 @media (max-width: 768px) {
+  .presentacionContacto {
+    display: block;
+  }
   .social-bar {
     display: none;
+  }
+  .footer-container {
+    display: flex;
+    flex-direction: column;
   }
 }
 .footerCcs {
