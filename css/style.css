@@ -774,6 +774,13 @@ header {
   font-style: normal;
 }
 
+@media (max-width: 768px) {
+  .divNavBar {
+    text-align: center;
+    padding: 0 15px;
+    padding-right: 0px;
+  }
+}
 .divPresentation {
   display: flex;
   flex-direction: column;
