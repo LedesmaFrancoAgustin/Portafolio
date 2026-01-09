@@ -1,6 +1,6 @@
 .footerCcs {
       background-color: #010002e3;
-      padding: 30px 20px;
+      padding: 10px 20px;
       text-align: center;
       border-top: 1px solid #ddd;
     }
@@ -52,3 +52,51 @@
       color: #ffffff;
       margin-top: 15px;
     }
+
+.backToTopContainer{ 
+  display: flex;        /* Para centrar el ícono */
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+}
+.top { 
+  width: 80px;          /* Tamaño del botón */
+  height: 80px;
+  background-color: #000; /* Fondo negro */
+  border-radius: 50%;   /* Redondo */
+  display: flex;        /* Para centrar el ícono */
+  justify-content: center;
+  align-items: center;
+  ;
+  
+  //display: none; /* aparece solo al hacer scroll */
+  background-color: #1a1a1a;
+  color: #fff;
+
+  border-radius: 50%;   /* Redondo */
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+   cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s, opacity 0.3s;
+
+  position: relative;   /* Permite mover el elemento dentro de su contenedor */
+  top: -30px;           /* Mueve el <a> 10px hacia arriba */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.top:hover {
+  background-color: #333;
+  transform: translateY(-3px);
+}
+.top img {
+  width: 24px;  /* Ajusta el tamaño del ícono */
+  height: 24px;
+}
+
+
+
+

@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   function copyEmail() {
-    const emailText = "ledesmafranco50@gmail.com";
+    const emailText = "ledesma-agustin@hotmail.com";
     navigator.clipboard.writeText(emailText).then(() => {
 
       Toastify({
@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 // function([string1, string2],target id,[color1,color2])    
-consoleText(['Desarrollador Full Stack.'], 'text',['rebeccapurple','rebeccapurple']);
+consoleText(['Desarrollador de Software.'], 'text',['rebeccapurple','rebeccapurple']);
 
 function consoleText(words, id, colors) {
   if (colors === undefined) colors = ['#fff'];
@@ -101,32 +101,23 @@ function consoleText(words, id, colors) {
   }, 400)
 }
 
-//----------------------------------------------------------------
-//EmailJS
+//Dark-BLACK
+  const toggle = document.getElementById("darkModeToggle");
 
-const buttonForm = document.getElementById('buttonForm');
+  toggle.addEventListener("click", () => {
+    document.body.classList.toggle("dark");
 
-const message =  document.getElementById('formEmail')
-message.addEventListener('submit', function(event) {
-   event.preventDefault();
+    // Guardar preferencia
+    localStorage.setItem(
+      "theme",
+      document.body.classList.contains("dark") ? "dark" : "light"
+    );
+  });
 
-   buttonForm.value = 'Sending...';
+  // Cargar preferencia guardada
+  if (localStorage.getItem("theme") === "dark") {
+    document.body.classList.add("dark");
+  }
 
-   const serviceID = 'default_service';
-   const templateID = 'template_2bu8rka';
-
-   emailjs.sendForm(serviceID, templateID, this)
-    .then(() => {
-      buttonForm.value = 'Send Email';
-
-      Toastify({
-        text: "Correo enviado correctamente",
-        duration: 3000,
-        backgroundColor: "linear-gradient(to right, #9088f3, #7843e9)",
-        }).showToast();
-
-    }, (err) => {
-      buttonForm.value = 'Send Email';
-      alert(JSON.stringify(err));
-    });
-});
+  // New year
+  document.getElementById('year').textContent = new Date().getFullYear();

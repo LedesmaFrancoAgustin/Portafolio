@@ -1,0 +1,107 @@
+:root {
+  --bg-color: #ffffff;
+  --text-color: #020617;
+  --card-bg: #ffffff;
+
+  --nav-bg: #ffffff;
+  --nav-text: #111827;
+  --nav-border: #e5e7eb;
+
+  --input-bg: #ffffff;
+  --input-text: #020617;
+  --input-border: #ced4da;
+  --input-placeholder: #6b7280;
+ // --accent: #2563eb;
+}
+
+body.dark {
+  --bg-color: #0f172a;
+  --text-color: #e5e7eb;
+  --card-bg: #020617;
+
+  --nav-bg: #020617;
+  --nav-text: #e5e7eb;
+  --nav-border: #263752;
+
+  --accent: #e5e7eb;
+
+   --input-bg: #151e44;
+  --input-text: #e5e7eb;
+  --input-border: #1e293b;
+  --input-placeholder: #94a3b8;
+
+  
+}
+
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.icon-portafolio {
+  width: 28px;
+  transition: filter 0.3s ease;
+}
+
+/* MODO OSCURO */
+body.dark .icon-Dark {
+  filter: invert(1);
+}
+
+
+
+icon-Git
+
+
+.card {
+  background-color: var(--card-bg);
+}
+
+// NavBar Dark
+
+.custom-navbar {
+  background-color: var(--nav-bg);
+  border-bottom: 1px solid var(--nav-border);
+}
+
+.custom-navbar .nav-link {
+  color: var(--nav-text);
+}
+
+.custom-navbar .nav-link:hover,
+.custom-navbar .nav-link.active {
+  color: var(--accent);
+}
+
+// Formulario Dark
+
+.form-control {
+  background-color: var(--input-bg) !important;
+  color: var(--input-text) !important;
+  border: 1px solid var(--input-border);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.form-control::placeholder {
+  color: var(--input-placeholder);
+}
+
+.form-control:focus {
+  background-color: var(--input-bg);
+  color: var(--input-text);
+  border-color: var(--accent);
+  box-shadow: 0 0 0 0.2rem rgba(96, 165, 250, 0.25);
+}
+
+.labelFormContact {
+  color: var(--text-color);
+}
+
+body .divFomrContact {
+  background-color: var(--card-bg) !important;
+  border-radius: 12px;
+  padding: 1.5rem;
+  //border: 1px solid var(--nav-border);
+}
+

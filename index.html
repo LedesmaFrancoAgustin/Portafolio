@@ -9,11 +9,7 @@
     <link rel="stylesheet" href="./css/style.css" >
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
 
-    <script type="text/javascript"
-    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-
-    <script type="text/javascript">
-    emailjs.init('9wipSkeRnxxUChuBW')
+    <script type="text/javascript"src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
     </script>
     
 </head>
@@ -22,53 +18,75 @@
 
 <header class="navBarBriefcase" >
     
-    <nav class="navbar navbar-expand-lg bg-body-tertiary py-3  ">
-        <div class="container ">
-          <a class="navbar-brand" href="#home">
-            <img src="./assets/Img/Iconos/portafolio.png" alt="ImagenPortafolio">
-          </a>
-         
-          <button class="navbar-toggler  " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          
-        
+    <div class="container d-flex align-items-center justify-content-between">
 
-          <div class="collapse navbar-collapse divNavBar" id="navbarSupportedContent">
-            <ul class="navbar-nav mb-2 mb-lg-0 txtHeader justify-content-center justify-content-lg-end w-100">
-              <li class="nav-item">
-                <a class="nav-link active txtTransicion px-2" href="#about-me">Sobre Mi</a>
-              </li>
-              <li class="nav-item txtTransicion px-2">
-                <a class="nav-link" href="#projects">Proyecto</a>
-              </li>
-              <li class="nav-item txtTransicion px-2">
-                <a class="nav-link" href="#contact">Contacto</a>
-              </li>
-            </ul>
-          </div>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg py-3 custom-navbar w-100 navbar-toggler-centered">
+      
 
-        </div>
-      </nav>
+      <a class="navbar-brand" href="#home">
+        <img src="./assets/Img/Iconos/portafolio.png"
+             class="icon-Dark"
+             alt="Portafolio">
+      </a>
+
+      <button class="navbar-toggler mx-auto"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse divNavBar" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto txtHeader">
+          <li class="nav-item">
+            <a class="nav-link active px-2" href="#about-me">Sobre Mi</a>
+          </li>
+          <li class="nav-item px-2">
+            <a class="nav-link" href="#projects">Proyecto</a>
+          </li>
+          <li class="nav-item px-2">
+            <a class="nav-link" href="#contact">Contacto</a>
+          </li>
+        </ul>
+      </div>
+
+    </nav>
+
+    <!-- BOTÓN MODO OSCURO (FUERA DEL NAV) -->
+    <div class="ms-3 darkmode-wrapper">
+      <button id="darkModeToggle" class="theme-toggle" aria-label="Cambiar modo">
+        <img src="./assets/Img/Iconos/dark-Black.png" class="icon moon" alt="Modo oscuro">
+        <img src="./assets/Img/Iconos/dark-Light.png" class="icon sun" alt="Modo claro">
+      </button>
+    </div>
+
+  </div>
        
 </header>
 
-<main >
+<main class="hero" >
+    <div class="bg-shape top-left"></div>
+    <div class="bg-shape bottom-right"></div>
 
    <div class="social-bar">
-    <a href="#" title="LinkedIn">
+    <a href="https://www.linkedin.com/in/francoledesmaagustin/" title="LinkedIn" target="_blank">
             <img src="./assets/Img/Iconos/linkedin.png" class="">
         </a>
-    <a href="#" title="GitHub">
+    <a href="https://github.com/LedesmaFrancoAgustin" title="GitHub" target="_blank">
             <img src="./assets/Img/Iconos/github.png" class="">
         </a>
-    <a href="#" title="Contactame">
+    <a href="#contact" title="Contactame">
              <img src="./assets/Img/Iconos/contacto.png" class="">
         </a>
 
   </div>
 
-<section class="container px-4 py-4 sectionPresetation " id="home">
+<section class="container px-4 py-4 sectionPresetation  " id="home">
+    
     <div class="d-sm-flex  ">
         <div class="col-lg-6 px-2 d-flex justify-content-center ">
             <img src="./assets/Img/Iconos/hombre.png " class="img-fluid">
@@ -84,7 +102,7 @@
                 </div>
             </div>
 
-            <p class="txtPresentationP pt-2 ">Un desarrollador web orientado a resultados que crea y administra sitios web y aplicaciones web. Diseño y codifico cosas maravillosamente simples y amo lo que hago</p>
+            <p class="txtPresentationP pt-2 ">Desarrollador de software con formación en sistemas, experiencia en programación y desarrollo web. Enfocado en aprender, aplicar buenas prácticas y crear soluciones eficientes, bien estructuradas y orientadas a resultados.</p>
 
             <div class="d-flex justify-content-between align-items-center">
                 <div class="presentacionContacto py-1">
@@ -119,20 +137,20 @@
     <div class=" main-container">
         <div class="text-center  py-4">
             <h2 class="txtH1 ">ACERCA DE MÍ</h2>
-            <p class="txtPresentationP pt-1">Diseño y codifico cosas maravillosamente simples y amo lo que hago</p>
+            <p class="txtPresentationP pt-1">Desarrollo soluciones de software aplicando buenas prácticas, con enfoque en el aprendizaje continuo y la mejora constante.</p>
         </div>
         <hr>
         <div class="d-md-flex pt-3">
             <div class="col-md-6 " >
-                <h2 class="py-3 text-center txtH2 ">¡Llegar a conocerme!</h2>
+                <h2 class="py-3 text-center txtH2 ">¡Conoceme un poco más!</h2>
                 <p class="txtP pt-3">
-                    Soy un desarrollador web centrado en el frontend que construye y administra el front-end de sitios web y aplicaciones web que conducen al éxito del producto en general. Echa un vistazo a algunos de mis trabajos en la sección de Proyectos .
+                    Soy desarrollador de software con formación en sistemas, enfocado en programación y desarrollo web. Participo en el diseño, desarrollo y mantenimiento de aplicaciones y sitios web, priorizando soluciones claras, eficientes y bien estructuradas. Podés ver algunos de mis trabajos en la sección de <strong>Proyectos</strong>.
                 </p>
                 <p class="txtP">
-                    También me gusta compartir contenido relacionado con lo que he aprendido a lo largo de los años en Desarrollo Web para que pueda ayudar a otras personas de la Comunidad de Desarrollo. No dudes en conectarte o seguirme en mi Linkedin e Instagram, donde publico contenido útil relacionado con el desarrollo y la programación web.
+                    Cuento con formación académica en informática y experiencia en la enseñanza de tecnologías, lo que fortaleció mis habilidades de análisis, comunicación y resolución de problemas. Además, realicé el curso de Desarrollo Web en Coderhouse, donde consolidé conocimientos prácticos y buenas prácticas de desarrollo.
                 </p>
                 <p class="txtP">
-                    Estoy abierto a oportunidades laborales donde pueda contribuir, aprender y crecer. Si tienes una buena oportunidad que coincida con mis habilidades y experiencia, no dudes en contactarme 
+                    Actualmente, me encuentro abierto a oportunidades laborales como <strong>Junior o Trainee</strong> , donde pueda aportar valor, continuar aprendiendo y crecer profesionalmente. Si considerás que mi perfil se ajusta a lo que estás buscando, no dudes en contactarme. 
                 </p>
             </div>
             <div class=" col-md-6">
@@ -152,8 +170,8 @@
                         
                     </div>
                     <div class="d-flex justify-content-around py-4 w-75">
-                        <img src="./assets/Img/Skills/github.png" class="img-fluid iconAbility">
-                        <img src="./assets/Img/Skills/react.png" class="img-fluid iconAbility">
+                        <img src="./assets/Img/Skills/github.png" class="img-fluid iconAbility icon-Dark">
+                        <img src="./assets/Img/Skills/react.png" class="img-fluid iconAbility icon-Dark">
                         <img src="./assets/Img/Skills/nodo-js.png" class="img-fluid iconAbility">
                         <img src="./assets/Img/Skills/bootstrap.png" class="img-fluid iconAbility">
                         
@@ -168,79 +186,154 @@
 </section>
 
 <section id="projects" class="container px-4 py-4">
-    <div class="">
-        <hr>
-        <div class="text-center  py-4">
-            <h2 class="txtH1 ">Proyectos</h2>
-            <p class="txtPresentationP pt-1">Diseño y codifico cosas maravillosamente simples y amo lo que hago</p>
-        </div>
-        <hr>
-     <!--
-        <div class="row" id="containerProyects" >
-      -->   
-                <div class="d-sm-flex"> 
-                    <div class="col-lg-4 col-md-6" >
-                        <a href="https://tusitio.com" target="_blank" style="text-decoration: none; color: inherit;">
-                            <div class="divProyect" style="background-image:url(  ${product.Image})">
-                                <div class="background"></div>
-                                <div class="cardProyect">
-                                    <div class="footer">
-                                        <div class="info">
-                                            <div class="name">Ledesma3D</div>
+            <div class="">
+                <hr>
+                <div class="text-center  py-4">
+                    <h2 class="txtH1 ">Proyectos</h2>
+                    <p class="txtPresentationP pt-1">Proyectos desarrollados aplicando buenas prácticas, con foco en funcionalidad y calidad de código.</p>
+                </div>
+                <hr>
+                  
+                <!-- Ledesma3d-->
+                <div class="py-4">
+                    <div class="d-sm-flex"> 
+                            <div class="col-lg-4 col-md-6" >
+
+                                        <div class="divProyect img-center  slider" 
+                                        data-images='[
+                                        "./assets/Img/Proyectos/Ledesma3D1.png",
+                                        "./assets/Img/Proyectos/Ledesma3D2.png",
+                                        "./assets/Img/Proyectos/Ledesma3D3.png"
+                                        ]'>
+ 
+                                        <div class="background"></div>
+                                        <div class="cardProyect">
+                                            <div class="footer">
+                                                <div class="info">
+                                                    <div class="name">Sitio web de modelado e impresión 3D de figuras y prototipos.</div>
+                                                </div>
+                                            </div>
+                                            <div class="card-blur nav-buttons">
+                                                <!-- Botón izquierda -->
+                                            <button class="nav-btn prev">&#10094;</button>
+                                            <!-- Botón derecha -->
+                                            <button class="nav-btn next">&#10095;</button>
+                                                
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="card-blur"></div>
+                                  
                                 </div>
-                        </a>  
-                        </div>
-                    </div>
-             
-                <div class="col-lg-8 px-5 py-4  d-flex flex-column justify-content-center"> 
-                    <div>
-                        <h3 class="txtNameProyect py-2"> Ledesma3D </h3>
-                        <p class="pTxtProyect px-2">Ledesma3D es una tienda online dedicada a la venta de productos impresos en 3D, desarrollada con HTML y JavaScript. Ofrece una experiencia de usuario intuitiva, permitiendo a los clientes explorar, personalizar y adquirir modelos únicos. La plataforma combina funcionalidad y diseño visual para presentar de forma clara cada producto, enfocándose en la accesibilidad y la estética moderna.</p>
-                    </div>
-                    
-                    <div class="  px-2 py-2">
-                            <ul class="tech-tags">
-                              <li class="tech-pill">HTML</li>
-                              <li class="tech-pill">CSS / SCSS</li>
-                              <li class="tech-pill">JavaScript</li>
-                              <li class="tech-pill">Git & GitHub</li>
-                              <li class="tech-pill">Bootstrap</li>                          
-                            </ul>
-                        </div>
-                        
-                     <div class="d-flex align-items-center">
-                        <div class=" px-4 py-2">
-                            <a href="${product.githubUrl}" target="_blank">
-                            <img src="./assets/Img/Iconos/github.png" class="icon-hover" alt="ImgGitHub"  >
-                            </a>
-                         </div>
-                         <div class="icon-hover">
-                            <a href="https://tu-sitio.com" target="_blank" class="aVisitWeb">Visitar sitio</a>
-                         </div>
-                     </div>   
-                    
+                            <div class="col-lg-8 px-5 py-4  d-flex flex-column justify-content-center"> 
+                            <div>
+                                <h3 class="txtNameProyect py-2"> LedesmaPrints 3D </h3>
+                                <p class="pTxtProyect px-2"><strong>LedesmaPrints 3D</strong> es una tienda online desarrollada con <strong>HTML</strong> y <strong>JavaScript</strong> , orientada a la visualización de productos impresos en 3D. El proyecto permite a los usuarios explorar el catálogo de forma clara e intuitiva, priorizando la navegación, la presentación del contenido y la accesibilidad.</p>
+                                <p class="pTxtProyect px-2" >La plataforma fue diseñada con un enfoque en la usabilidad y una estética moderna, aplicando buenas prácticas de desarrollo frontend para lograr una interfaz funcional y mantenible.</p>
+                            </div>
+                            
+                            <div class="  px-2 py-2">
+                                    <ul class="tech-tags">
+                                    <li class="tech-pill">HTML</li>
+                                    <li class="tech-pill">CSS / SCSS</li>
+                                    <li class="tech-pill">JavaScript</li>
+                                    <li class="tech-pill">Git & GitHub</li>
+                                    <li class="tech-pill">Bootstrap</li>                          
+                                    </ul>
+                                </div>
+                                
+                            <div class="d-flex align-items-center">
+                                <div class=" px-4 py-2">
+                                    <a href="https://github.com/LedesmaFrancoAgustin/LedesmaPrints3D" target="_blank">
+                                    <img src="./assets/Img/Iconos/github.png" class="icon-hover icon-Dark" alt="ImgGitHub"  >
+                                    </a>
+                                </div>
+                                <div class="icon-hover">
+                                    <a href="https://ledesmafrancoagustin.github.io/LedesmaPrints3D/" target="_blank" class="aVisitWeb">Visitar sitio</a>
+                                </div>
+                            </div>   
+                            
 
+                            
+                                
+                                </div>           
+                    </div>
                     
-                        
                 </div>
+                <!-- Juego de Naruto Java-->
+                <div class="py-4">
+                    <div class="d-sm-flex"> 
+                            <div class="col-lg-4 col-md-6" >
+                                
+                                    <div class="divProyect slider" 
+                                        data-images='[
+                                        "./assets/Img/Proyectos/JuegoNarutoJava.png",
+                                        "./assets/Img/Proyectos/JuegoNarutoJava2.png"
+                                        ]'>
+ 
+                                        <div class="background"></div>
+                                        <div class="cardProyect">
+                                            <div class="footer">
+                                                <div class="info">
+                                                    <div class="name">Juego de aventuras basado en Naruto con interfaz gráfica en Java.</div>
+                                                </div>
+                                            </div>
+                                            <div class="card-blur nav-buttons">
+                                                <!-- Botón izquierda -->
+                                            <button class="nav-btn prev">&#10094;</button>
+                                            <!-- Botón derecha -->
+                                            <button class="nav-btn next">&#10095;</button>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            <div class="col-lg-8 px-5 py-4  d-flex flex-column justify-content-center"> 
+                            <div>
+                                <h3 class="txtNameProyect py-2"> Juego de Naruto – Java </h3>
+                                <p class="pTxtProyect px-2"><strong>Juego de Naruto</strong>  es un juego 2D desarrollado en <strong>Java</strong> como proyecto académico para la materia Programación I en la Universidad Nacional de General Sarmiento (UNGS). El proyecto se centra en la aplicación de conceptos fundamentales de <strong>programación orientada a objetos</strong> , como el uso de clases, instancias, métodos, estados e interacción entre objetos.</p>
+                                <p class="pTxtProyect px-2"">El entorno gráfico 2D fue provisto por la cátedra, lo que permitió centrar el desarrollo en la lógica del juego, la estructura del código y el modelado de objetos, aplicando buenas prácticas de programación.</p>
+                            </div>
+                            
+                            <div class="  px-2 py-2">
+                                    <ul class="tech-tags">
+                                    <li class="tech-pill">Java</li>
+                                    <li class="tech-pill">POO</li>                         
+                                    </ul>
+                                </div>
+                                
+                            <div class="d-flex align-items-center">
+                                <div class=" px-4 py-2">
+                                    <a href="https://github.com/LedesmaFrancoAgustin/JuegoNaruto-Java/tree/main" target="_blank">
+                                    <img src="./assets/Img/Iconos/github.png" class="icon-hover icon-Dark" alt="ImgGitHub"  >
+                                    </a>
+                                </div>
+                              <!--   <div class="icon-hover">
+                                    <a href="https://github.com/LedesmaFrancoAgustin/JuegoNaruto-Java/tree/main" target="_blank" class="aVisitWeb">Visitar sitio</a>
+                                </div>
+                                -->
+                            </div>   
+                            
+
+                            
+                                
+                                </div>
+                    </div>
+                 
+                </div>
+
             </div>
-        </div>
-        
-    </div>
+
     
 </section>
 
-<section id="contact" class="container px-4 py-4">
+<section id="contact" class="container px-4 py-5">
     <div class=" main-container">
         <hr>
         <div class="text-center  py-4">
             <h2 class="txtH1 ">Contacto</h2>
                 <div class="inline-container">
                     <p class="txtPresentationP pt-1">Ponte en contacto o envíame un correo electrónico directamente a:</p>
-                    <span id="email" class="txtSpan">Ledesmafranco50@gmail.com</span>
+                    <span id="email" class="txtSpan">Ledesma-agustin@hotmail.com</span>
                     <button class="btnCopy" id="btnCopyEmail" >
                         <img src="./assets/Img/Iconos/copy.png" alt="Copiar" style="width: 20px; height: 20px;">
                     </button>
@@ -249,21 +342,21 @@
         <hr>
         <div class="d-flex justify-content-center pt-3">
             <div class="col-12 col-sm-10 divFomrContact ">
-                <div class="col-8">
+                <div class="col-8 py-3">
                     <form class="" id="formEmail">
                         
                         <div class="mb-3">
                             <label for="formGroupExampleInput" class="form-label labelFormContact">Nombre</label>
-                            <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre" name="name" id="name">
+                            <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre" name="name" id="name" required>
                         </div>
             
                         <div class="mb-3">
                             <label for="exampleFormControlInput1" class="form-label labelFormContact" >Correo electrónico</label>
-                            <input type="email" class="form-control"  placeholder="nombre@example.com"  name="fromEmail" id="fromEmail">
+                            <input type="email" class="form-control"  placeholder="nombre@example.com"  name="from_email" id="fromEmail" required>
                         </div>
                         <div class="mb-3">
                             <label for="exampleFormControlTextarea1" class="form-label labelFormContact " >Mensaje</label>
-                            <textarea class="form-control" rows="3" name="message" id="message"></textarea>
+                            <textarea class="form-control" rows="3" name="message" id="message" required></textarea>
                         </div>
 
                         <div class="d-flex justify-content-center">
@@ -289,34 +382,44 @@
 
 
 <footer class="footerCcs" >
+     
+    <div class="backToTopContainer"> 
+        <a class="top" href="#home">
+            <img src="./assets/Img/Iconos/top.png" class="">
+        </a> 
+    </div>
     <div class="footer-container">
         <div class="footer-Me">
             <p class="footer-name">Ledesma Franco Agustin</p>
-            <p class="footer-role">Desarrollador software</p>
+            <p class="footer-role">Desarrollador de software</p>
+             <p class="footer-role">📍 Buenos Aires, Argentina</p>
+            
         </div>
       
+
         <div class="footer-social">
-            <a href="#" title="LinkedIn">
+            <a href="https://www.linkedin.com/in/francoledesmaagustin/" target="_blank" title="LinkedIn">
                 <img src="./assets/Img/Iconos/linkedin-White.png" class="">
             </a>
-            <a href="#" title="GitHub">
+            <a href="https://github.com/LedesmaFrancoAgustin" target="_blank" title="GitHub">
                 <img src="./assets/Img/Iconos/github-white.png" class="">
             </a>
-            <a href="#" title="Contactame">
+            <a href="#contact"  title="Contactame">
             <img src="./assets/Img/Iconos/contacto-White.png" class="">
             </a>
-            <a href="mailto:tuemail@ejemplo.com"></a>
         </div>
 
     
     </div>
     <div class="footer-autor">
-          <p class="footer-copy">&copy; 2025 Ledesma Franco Agustin. Todos los derechos reservados.</p>
+          <p class="footer-copy">&copy; <span id="year"></span> Ledesma Franco Agustin. Todos los derechos reservados.</p>
     </div>
 
 </footer>
 <script src="./js/proyects.js"></script>
 <script src="./js/briefcase.js"></script>
+<script src="./js/email.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 <script src="./js/bootstrap.bundle.min.js"> </script>
 </body>

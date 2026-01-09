@@ -6,6 +6,16 @@ header{
 
     position: sticky;
 }
+
+.navBarBriefcase,
+.navBarBriefcase .navbar {
+  background-color: inherit;
+}
+
+body.dark .navBarBriefcase {
+  background-color: #020617;
+}
+
 .navBarBriefcase{
 
     position: sticky;
@@ -27,11 +37,90 @@ header{
 
 }
 
+.darkmode-wrapper {
+  position: absolute;
+  top: 20px;
+  right: 160px;
+  z-index: 1100;
+}
+
+
+/* BOTÓN */
+.theme-toggle {
+  width: 80px;
+  height: 35px;
+  border-radius: 30px;
+  border: 2px solid #000;
+  background: #fff;
+  position: relative;
+  cursor: pointer;
+  padding: 0;
+  transition: background 0.3s ease;
+}
+
+
+
+.theme-toggle .icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+  transition: all 0.3s ease;
+}
+
+/* ICONO LUNA */
+.theme-toggle .moon {
+  left: 8px;
+}
+
+/* ICONO SOL */
+.theme-toggle .sun {
+  right: 8px;
+  opacity: 0;
+}
+
+/* MODO OSCURO */
+body.dark {
+  background-color: #121212;
+  color: #f1f1f1;
+}
+
+body.dark .theme-toggle {
+  background: #000;
+  border-color: #fff;
+}
+
+/* Animación del switch */
+body.dark .moon {
+  left: 41px;
+  opacity: 0;
+}
+
+body.dark .sun {
+  opacity: 1;
+  left: 41px;
+}
+
+body.dark .icon {
+  filter: invert(1);
+}
+
+
 @media (max-width: 768px) {
     .divNavBar{
     text-align: center;
     padding: 0 15px;
     padding-right: 0px;
+
+}
+
+.darkmode-wrapper {
+  top: 20px;
+  right: 20px;
+
 }
     
 }
+
+
