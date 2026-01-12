@@ -2,14 +2,9 @@
 const formEmail = document.getElementById('formEmail');
 const buttonForm = document.getElementById('buttonForm');
 
- //const serviceID = 'service_lqf4uas';
- //const templateID = 'template_gmkl5lh';
- //const apikey = 'cy6blbeOu17XpocIC';
-
-  const serviceID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
-  const templateID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
-  const apikey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
-
+ const serviceID = 'service_lqf4uas';
+ const templateID = 'template_gmkl5lh';
+ const apikey = 'cy6blbeOu17XpocIC';
 
 formEmail.addEventListener('submit', function (event) {
   event.preventDefault();
