@@ -944,7 +944,7 @@ header {
 }
 
 body.dark .navBarBriefcase {
-  background-color: #020617;
+  background-color: #170217;
 }
 
 .navBarBriefcase {
@@ -954,8 +954,7 @@ body.dark .navBarBriefcase {
 }
 
 .divNavBar {
-  padding: 0 15px;
-  padding-right: 120px;
+  padding: 0 15px 0 15px;
 }
 
 .txtHeader {
@@ -963,6 +962,13 @@ body.dark .navBarBriefcase {
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+}
+
+.homePortafolio {
+  position: absolute;
+  top: 20px;
+  left: 160px;
+  z-index: 1100;
 }
 
 .darkmode-wrapper {
@@ -1040,6 +1046,23 @@ body.dark .icon {
   .darkmode-wrapper {
     top: 20px;
     right: 20px;
+  }
+  .homePortafolio {
+    top: 20px;
+    left: 20px;
+  }
+  .navbar-toggler {
+    background-color: #c4bbbb;
+  }
+  .theme-toggle {
+    width: 60px;
+    height: 30px;
+  }
+  body.dark .moon {
+    left: 32px;
+  }
+  body.dark .sun {
+    left: 32px;
   }
 }
 :root {
