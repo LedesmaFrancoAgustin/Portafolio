@@ -490,3 +490,10 @@ figure.effect-sadie figcaption::before {
   animation: float 10s ease-in-out infinite;
 }
 
+@media (max-width: 768px) {
+  .bg-shape {
+    animation: none;
+  }
+   
+
+}

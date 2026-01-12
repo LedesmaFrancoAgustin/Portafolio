@@ -458,6 +458,11 @@ figure.effect-sadie figcaption::before {
   animation: float 10s ease-in-out infinite;
 }
 
+@media (max-width: 768px) {
+  .bg-shape {
+    animation: none;
+  }
+}
 .console-container {
   font-family: "Platypi", serif;
   font-optical-sizing: auto;
@@ -931,6 +936,11 @@ figure.effect-sadie figcaption::before {
   animation: float 10s ease-in-out infinite;
 }
 
+@media (max-width: 768px) {
+  .bg-shape {
+    animation: none;
+  }
+}
 header {
   box-shadow: 0px 9px 5px -7px rgba(120, 67, 233, 0.67);
   -webkit-box-shadow: 0px 9px 5px -7px rgba(120, 67, 233, 0.67);
@@ -1052,7 +1062,7 @@ body.dark .icon {
     left: 20px;
   }
   .navbar-toggler {
-    background-color: #c4bbbb;
+    background-color: rgba(255, 255, 255, 0.8549019608);
   }
   .theme-toggle {
     width: 60px;
@@ -1458,18 +1468,6 @@ hr {
   transform: scale(1.2);
 }
 
-@media (max-width: 768px) {
-  .presentacionContacto {
-    display: block;
-  }
-  .social-bar {
-    display: none;
-  }
-  .footer-container {
-    display: flex;
-    flex-direction: column;
-  }
-}
 /* Bordes Violetas */
 .hero {
   position: relative;
@@ -1484,7 +1482,8 @@ hr {
   background: radial-gradient(circle at center, rgba(185, 169, 255, 0.9), rgba(120, 67, 233, 0.8));
   filter: blur(90px);
   opacity: 0.35;
-  z-index: 0;
+  z-index: -1;
+  pointer-events: none;
 }
 
 /* Esquina superior izquierda */
@@ -1499,6 +1498,21 @@ hr {
   right: -180px;
 }
 
+@media (max-width: 768px) {
+  .presentacionContacto {
+    display: block;
+  }
+  .social-bar {
+    display: none;
+  }
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .imgPortada {
+    height: 250px;
+  }
+}
 .footerCcs {
   background-color: rgba(1, 0, 2, 0.8901960784);
   padding: 10px 20px;
