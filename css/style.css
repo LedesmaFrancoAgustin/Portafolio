@@ -1498,7 +1498,32 @@ hr {
   right: -180px;
 }
 
+/*---------------------------Foto Perfil*-------------------/ */
+.profile-img-container {
+  width: 512px;
+  height: 512px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-img {
+  width: 100%;
+  height: 100%;
+  object-fit: scale-down; /* clave para que no se deforme */
+  filter: drop-shadow(0 4px 20px rgba(185, 169, 255, 0.9));
+}
+
 @media (max-width: 768px) {
+  .profile-img-container {
+    border-radius: 15%;
+    max-width: 420px;
+  }
+  .profile-img {
+    object-fit: cover;
+  }
   .presentacionContacto {
     display: block;
   }
