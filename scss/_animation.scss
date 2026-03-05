@@ -204,7 +204,7 @@ figure.effect-sadie figcaption::before {
   transition: margin-top 0.4s;
 }
 
-.divProyect :hover .divProyectDescripcion {
+.divProyect:hover .divProyectDescripcion {
   margin-top: 75px;
 }
 
@@ -213,18 +213,26 @@ figure.effect-sadie figcaption::before {
 /***** Sadie *****/
 /*---------------*/
 
-.background {
-  
+.background{
   position: absolute;
-  top: -40px;
-  left: -40px;
-  height: 100%;
+  inset: 0;
+  overflow: hidden;
+  border-radius: 25px;
+}
+
+/* imagen del proyecto */
+.project-img{
   width: 100%;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  -webkit-filter: blur(30px);
-  filter: blur(30px);
+  height: 100%;
+  object-fit: cover;
+  display:block;
+
+  transition: transform .4s ease;
+}
+
+/* efecto hover suave */
+.divProyect:hover .project-img{
+  transform: scale(1.05);
 }
 
 .cardProyect {

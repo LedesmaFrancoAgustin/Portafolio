@@ -121,3 +121,107 @@ function consoleText(words, id, colors) {
 
   // New year
   document.getElementById('year').textContent = new Date().getFullYear();
+
+
+document.addEventListener("DOMContentLoaded", () => {
+
+  //========================================================================
+  // Slider de imágenes (cards)
+  //========================================================================
+
+  document.querySelectorAll(".divProyect").forEach(card => {
+
+    const images = JSON.parse(card.dataset.images);
+    const img = card.querySelector(".project-img");
+
+    if (!img) return;
+
+    let index = 0;
+
+    card.dataset.index = index;
+    img.src = images[index];
+
+    const prev = card.querySelector(".prev");
+    const next = card.querySelector(".next");
+
+    prev.addEventListener("click", (e) => {
+      e.stopPropagation();
+
+      index = (index - 1 + images.length) % images.length;
+      card.dataset.index = index;
+
+      img.src = images[index];
+    });
+
+    next.addEventListener("click", (e) => {
+      e.stopPropagation();
+
+      index = (index + 1) % images.length;
+      card.dataset.index = index;
+
+      img.src = images[index];
+    });
+
+  });
+
+
+  //========================================================================
+  // Modal de imagen con slider
+  //========================================================================
+
+  const modal = document.getElementById("imageModal");
+  const modalImg = document.getElementById("modalImage");
+  const closeBtn = document.querySelector(".close-modal");
+
+  const modalPrev = document.querySelector(".modal-prev");
+  const modalNext = document.querySelector(".modal-next");
+
+  let modalImages = [];
+  let modalIndex = 0;
+
+  document.querySelectorAll(".divProyect").forEach(card => {
+
+    card.addEventListener("click", () => {
+
+      modalImages = JSON.parse(card.dataset.images);
+      modalIndex = parseInt(card.dataset.index) || 0;
+
+      modalImg.src = modalImages[modalIndex];
+      modal.style.display = "flex";
+
+    });
+
+  });
+
+  // Imagen anterior
+  modalPrev.addEventListener("click", (e) => {
+
+    e.stopPropagation();
+
+    modalIndex = (modalIndex - 1 + modalImages.length) % modalImages.length;
+    modalImg.src = modalImages[modalIndex];
+
+  });
+
+  // Imagen siguiente
+  modalNext.addEventListener("click", (e) => {
+
+    e.stopPropagation();
+
+    modalIndex = (modalIndex + 1) % modalImages.length;
+    modalImg.src = modalImages[modalIndex];
+
+  });
+
+  // Cerrar modal
+  closeBtn.onclick = () => {
+    modal.style.display = "none";
+  };
+
+  modal.addEventListener("click", (e) => {
+    if (e.target === modal) {
+      modal.style.display = "none";
+    }
+  });
+
+});

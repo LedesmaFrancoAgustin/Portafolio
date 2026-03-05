@@ -197,7 +197,7 @@ figure.effect-sadie figcaption::before {
   transition: margin-top 0.4s;
 }
 
-.divProyect :hover .divProyectDescripcion {
+.divProyect:hover .divProyectDescripcion {
   margin-top: 75px;
 }
 
@@ -206,15 +206,23 @@ figure.effect-sadie figcaption::before {
 /*---------------*/
 .background {
   position: absolute;
-  top: -40px;
-  left: -40px;
-  height: 100%;
+  inset: 0;
+  overflow: hidden;
+  border-radius: 25px;
+}
+
+/* imagen del proyecto */
+.project-img {
   width: 100%;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  -webkit-filter: blur(30px);
-  filter: blur(30px);
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+/* efecto hover suave */
+.divProyect:hover .project-img {
+  transform: scale(1.05);
 }
 
 .cardProyect {
@@ -675,7 +683,7 @@ figure.effect-sadie figcaption::before {
   transition: margin-top 0.4s;
 }
 
-.divProyect :hover .divProyectDescripcion {
+.divProyect:hover .divProyectDescripcion {
   margin-top: 75px;
 }
 
@@ -684,15 +692,23 @@ figure.effect-sadie figcaption::before {
 /*---------------*/
 .background {
   position: absolute;
-  top: -40px;
-  left: -40px;
-  height: 100%;
+  inset: 0;
+  overflow: hidden;
+  border-radius: 25px;
+}
+
+/* imagen del proyecto */
+.project-img {
   width: 100%;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  -webkit-filter: blur(30px);
-  filter: blur(30px);
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+/* efecto hover suave */
+.divProyect:hover .project-img {
+  transform: scale(1.05);
 }
 
 .cardProyect {
@@ -1117,7 +1133,7 @@ body.dark .icon-Dark {
   filter: invert(1);
 }
 
-icon-Git .card {
+.card {
   background-color: var(--card-bg);
 }
 
@@ -1542,6 +1558,56 @@ hr {
     height: 250px;
   }
 }
+.image-modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  justify-content: center;
+  align-items: center;
+}
+
+.image-modal img {
+  max-width: 65%;
+  max-height: 65%;
+}
+
+.modal-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(255, 255, 255, 0.8);
+  color: black;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s, background 0.2s;
+}
+
+.modal-nav:hover {
+  transform: translateY(-50%) scale(1.1);
+  background: white;
+}
+
+.modal-prev {
+  left: 30px;
+}
+
+.modal-next {
+  right: 30px;
+}
+
 .footerCcs {
   background-color: rgba(1, 0, 2, 0.8901960784);
   padding: 10px 20px;
