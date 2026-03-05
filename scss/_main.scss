@@ -87,7 +87,9 @@
   }
   
   .img-center{
-      background-position: center center; 
+      background-position: center; 
+      
+
   }
 
 /* Izquierda */
@@ -469,6 +471,7 @@ box-shadow: 0px 0px 61px 10px rgba(120,67,233,1);
 
 .modal-prev{
   left: 30px;
+  z-index: 999;
 }
 
 .modal-next{

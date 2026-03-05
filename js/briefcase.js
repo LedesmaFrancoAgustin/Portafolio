@@ -125,13 +125,19 @@ function consoleText(words, id, colors) {
 
 document.addEventListener("DOMContentLoaded", () => {
 
+  const isMobile = window.matchMedia("(max-width: 768px)").matches;
+
   //========================================================================
   // Slider de imágenes (cards)
   //========================================================================
 
   document.querySelectorAll(".divProyect").forEach(card => {
 
-    const images = JSON.parse(card.dataset.images);
+    const images = JSON.parse(
+      (isMobile && card.dataset.imagesMobile) 
+      ? card.dataset.imagesMobile 
+      : card.dataset.images
+    );
     const img = card.querySelector(".project-img");
 
     if (!img) return;
@@ -183,7 +189,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
     card.addEventListener("click", () => {
 
-      modalImages = JSON.parse(card.dataset.images);
+         modalImages = JSON.parse(
+          (isMobile && card.dataset.imagesMobile) 
+          ? card.dataset.imagesMobile 
+          : card.dataset.images
+        );
       modalIndex = parseInt(card.dataset.index) || 0;
 
       modalImg.src = modalImages[modalIndex];
