@@ -1710,4 +1710,372 @@ hr {
   height: 24px;
 }
 
+/* ======================================================
+PROJECT PAGE - estilo integrado con portfolio
+====================================================== */
+.project-page {
+  padding: 110px 20px 80px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.project-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+/* ======================================================
+HERO PROYECTO
+====================================================== */
+.project-hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.project-title h1 {
+  font-family: "Platypi", serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.project-subtitle {
+  margin: 20px 0px;
+  max-width: 520px;
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* pills tecnologias */
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.project-tags span {
+  background: #1e2b3a;
+  color: #fff;
+  padding: 8px 18px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.project-tags span:hover {
+  background: #2d3e50;
+}
+
+/* botones */
+.project-buttons {
+  margin-top: 25px;
+  display: flex;
+  gap: 15px;
+}
+
+.btn-project {
+  text-decoration: none;
+  padding: 10px 22px;
+  border-radius: 28px;
+  border: 3px solid #7843e9;
+  background: #f9f9fa;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn-project:hover {
+  background: #7843e9;
+  color: white;
+}
+
+.btn-project-outline {
+  text-decoration: none;
+  padding: 10px 22px;
+  border-radius: 28px;
+  border: 2px solid black;
+  color: black;
+  transition: 0.3s;
+}
+
+.btn-project-outline:hover {
+  background: black;
+  color: white;
+}
+
+/* imagen */
+.project-hero-image img {
+  width: 100%;
+  border-radius: 25px;
+  border: 3px solid black;
+  box-shadow: 0px 0px 61px 5px rgba(120, 67, 233, 0.4);
+}
+
+/* ======================================================
+SECCIONES
+====================================================== */
+.project-section h2 {
+  margin-bottom: 40px;
+  font-family: "Platypi", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.project-section p {
+  line-height: 1.7;
+  margin-bottom: 15px;
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* lista problema */
+.project-list {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+.project-list li {
+  margin-bottom: 8px;
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* ======================================================
+FUNCIONALIDADES
+====================================================== */
+/* Grid centrado */
+.features-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+/* Cards */
+.feature-card {
+  position: relative;
+  width: 280px;
+  padding: 25px 15px;
+  border-radius: 20px;
+  border: 1.5px solid #9088f3; /* borde violeta suave */
+  background: linear-gradient(145deg, #606B87, #2C3140); /* degradé gris-azulado sutil */
+  color: #ffffff;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1); /* sombra muy suave */
+}
+
+/* Hover animado */
+.feature-card:hover {
+  transform: translateY(-3px) scale(1.015);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12), 0 0 15px rgba(144, 136, 243, 0.25); /* glow violeta muy sutil */
+}
+
+/* Iconos dentro de las cards */
+.feature-icon {
+  font-size: 32px;
+  color: #9088f3; /* violeta suave */
+  margin-bottom: 12px;
+  transition: all 0.3s ease;
+}
+
+/* Hover icono */
+.feature-card:hover .feature-icon {
+  transform: rotate(8deg) scale(1.12);
+  color: #ffffff;
+}
+
+/* Textos */
+.feature-card h3 {
+  font-family: "Platypi", sans-serif; /* según tu CSS principal */
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.feature-card p {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* ======================================================
+GALERIA - CARRUSEL MODERNO (Solo project-section-gallery)
+====================================================== */
+.text-title {
+  font-family: "Platypi", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+/* Carrusel personalizado solo para esta galería */
+.project-section-gallery .project-carousel {
+  position: relative;
+}
+
+.project-section-gallery .carousel-item {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.project-section-gallery .carousel-item img {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-section-gallery .carousel-item:hover img {
+  transform: scale(1.05);
+  box-shadow: 0 15px 40px rgba(120, 67, 233, 0.5);
+}
+
+/* Botones de navegación */
+.project-section-gallery .carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(50, 50, 70, 0.7);
+  border: none;
+  color: #fff;
+  font-size: 2rem;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 10;
+  transition: background 0.3s;
+}
+
+.project-section-gallery .carousel-btn:hover {
+  background: rgba(120, 67, 233, 0.8);
+}
+
+.project-section-gallery .carousel-btn.prev {
+  left: 10px;
+}
+
+.project-section-gallery .carousel-btn.next {
+  right: 10px;
+}
+
+/* ======================================================
+TECNOLOGIAS - CARDS + PILLS CON ICONOS
+====================================================== */
+/* ======================================================
+TECNOLOGIAS - CARDS FUNCIONALIDADES
+====================================================== */
+.project-section-tech .tech-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 25px;
+}
+
+.project-section-tech .tech-card {
+  background: linear-gradient(135deg, #3c3c41, #515e7b);
+  color: #fff;
+  padding: 25px 15px;
+  border-radius: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.project-section-tech .tech-card:hover {
+  transform: translateY(-5px) scale(1.03);
+  box-shadow: 0 20px 40px rgba(120, 67, 233, 0.5);
+}
+
+.project-section-tech .tech-card-icon {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 15px;
+}
+
+.project-section-tech .tech-card h4 {
+  margin-bottom: 8px;
+  font-size: 1.2rem;
+}
+
+.project-section-tech .tech-card p {
+  font-size: 0.9rem;
+  color: #d1d1e0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .project-section-tech .tech-card {
+    padding: 20px 10px;
+  }
+  .project-section-tech .tech-card-icon {
+    width: 40px;
+    height: 40px;
+  }
+}
+@media (max-width: 480px) {
+  .project-section-tech .tech-card-icon {
+    width: 30px;
+    height: 30px;
+  }
+}
+/* ======================================================
+IMPACTO DEL PROYECTO - CARD
+====================================================== */
+.project-section-impact .impact-card {
+  background: linear-gradient(145deg, #3c3c41, #515e7b);
+  color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(120, 67, 233, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.project-section-impact .impact-card:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(120, 67, 233, 0.6);
+}
+
+.project-section-impact p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.bg-shape.bottom-right {
+  animation-play-state: paused;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .project-section-impact .impact-card {
+    padding: 20px;
+  }
+  .project-section-impact p {
+    font-size: 1rem;
+  }
+}
+/* ======================================================
+RESPONSIVE
+====================================================== */
+@media (max-width: 900px) {
+  .project-hero {
+    grid-template-columns: 1fr;
+  }
+  .project-title h1 {
+    font-size: 36px;
+  }
+  .project-page {
+    padding: 75px 20px 80px 20px;
+    max-width: 1200px;
+    margin: auto;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
